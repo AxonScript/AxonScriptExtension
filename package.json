@@ -1,0 +1,48 @@
+{
+  "name": "axonscript",
+  "icon": "icon.png",
+  "displayName": "AxonScript",
+  "description": "A VS Code extension that adds syntax highlighting and basic editing features for the AxonScript programming language. Make your code clean, readable, and more productive with AxonScript support!",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "axonscript",
+        "aliases": [
+          "AxonScript",
+          "axonscript"
+        ],
+        "extensions": [
+          ".ax"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "axonscript",
+        "path": "./snippets/axonscript.code-snippets.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "axonscript-icons",
+        "label": "AxonScript File Icons",
+        "path": "./icons/axonscript-icon-theme.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "axonscript",
+        "scopeName": "source.axon",
+        "path": "./syntaxes/axonscript.tmLanguage.json"
+      }
+    ]
+  }
+}

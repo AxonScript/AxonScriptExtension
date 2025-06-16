@@ -1,0 +1,104 @@
+{
+    "scopeName": "source.axon",
+    "patterns": [
+        {
+            "name": "keyword.type.axon",
+            "match": "\\b(i32|i64|f32|f64|str|bool|tuple)\\b"
+        },
+        {
+            "name": "keyword.control.axon",
+            "match": "\\b(do|set|cast|when|not|out|math|branch)\\b"
+        },
+        {
+            "name": "constant.language.boolean.axon",
+            "match": "\\b(yes|no)\\b"
+        },
+        {
+            "name": "keyword.function.begin.axon",
+            "match": ">>"
+        },
+        {
+            "name": "keyword.function.end.axon",
+            "match": "<<"
+        },
+        {
+            "name": "punctuation.section.brackets.begin.axon",
+            "match": "\\["
+        },
+        {
+            "name": "punctuation.section.brackets.end.axon",
+            "match": "\\]"
+        },
+        {
+            "name": "punctuation.section.parens.begin.axon",
+            "match": "\\("
+        },
+        {
+            "name": "punctuation.section.parens.end.axon",
+            "match": "\\)"
+        },
+        {
+            "name": "punctuation.section.braces.begin.axon",
+            "match": "\\{"
+        },
+        {
+            "name": "punctuation.section.braces.end.axon",
+            "match": "\\}"
+        },
+        {
+            "name": "punctuation.terminator.axon",
+            "match": ";"
+        },
+        {
+            "name": "punctuation.colon.axon",
+            "match": ":"
+        },
+        {
+            "name": "punctuation.dot.axon",
+            "match": "\\."
+        },
+        {
+            "name": "punctuation.comma.axon",
+            "match": ","
+        },
+        {
+            "name": "keyword.operator.assignment.axon",
+            "match": "="
+        },
+        {
+            "name": "keyword.operator.arithmetic.axon",
+            "match": "\\+|-|\\*|/|%"
+        },
+        {
+            "name": "keyword.operator.comparison.axon",
+            "match": "==|!=|>=|<=|>|<"
+        },
+        {
+            "name": "comment.line.axon",
+            "match": "\\?\\?[^\\r\\n]*"
+        },
+        {
+            "name": "string.quoted.double.axon",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.axon",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        {
+            "name": "constant.numeric.float.axon",
+            "match": "\\b[0-9]+\\.[0-9]+\\b"
+        },
+        {
+            "name": "constant.numeric.integer.axon",
+            "match": "\\b[0-9]+\\b"
+        },
+        {
+            "name": "variable.other.identifier.axon",
+            "match": "\\b[a-zA-Z_][a-zA-Z0-9_\\-\\*\\$]*\\b"
+        }
+    ]
+}

@@ -1,0 +1,309 @@
+{
+    "Function block": {
+        "prefix": ">>",
+        "body": [
+            ">>",
+            "\t$0",
+            "<<"
+        ],
+        "description": "Function block"
+    },
+    "End block": {
+        "prefix": "<<",
+        "body": [
+            "<<$0"
+        ],
+        "description": "End function block"
+    },
+    "Print": {
+        "prefix": "out",
+        "body": [
+            "out($0);"
+        ],
+        "description": "Print to console"
+    },
+    "Variable": {
+        "prefix": "set",
+        "body": [
+            "set $1($2) = $0;"
+        ],
+        "description": "Variable declaration"
+    },
+    "Mutable variable": {
+        "prefix": "set :{name}",
+        "body": [
+            "set :$1($2) = $0;"
+        ],
+        "description": "Mutable variable"
+    },
+    "Type: i32": {
+        "prefix": "i32",
+        "body": [
+            "i32"
+        ],
+        "description": "Type: i32"
+    },
+    "Type: i64": {
+        "prefix": "i64",
+        "body": [
+            "i64"
+        ],
+        "description": "Type: i64"
+    },
+    "Type: f32": {
+        "prefix": "f32",
+        "body": [
+            "f32"
+        ],
+        "description": "Type: f32"
+    },
+    "Type: f64": {
+        "prefix": "f64",
+        "body": [
+            "f64"
+        ],
+        "description": "Type: f64"
+    },
+    "Type: str": {
+        "prefix": "str",
+        "body": [
+            "str"
+        ],
+        "description": "Type: str"
+    },
+    "Type: bool": {
+        "prefix": "bool",
+        "body": [
+            "bool"
+        ],
+        "description": "Type: bool"
+    },
+    "Type: tuple": {
+        "prefix": "tuple",
+        "body": [
+            "tuple"
+        ],
+        "description": "Type: tuple"
+    },
+    "True": {
+        "prefix": "yes",
+        "body": [
+            "yes"
+        ],
+        "description": "Boolean: true"
+    },
+    "False": {
+        "prefix": "no",
+        "body": [
+            "no"
+        ],
+        "description": "Boolean: false"
+    },
+    "If": {
+        "prefix": "when",
+        "body": [
+            "when $0"
+        ],
+        "description": "If statement"
+    },
+    "Else": {
+        "prefix": "not",
+        "body": [
+            "not $0"
+        ],
+        "description": "Else/negative"
+    },
+    "Branch": {
+        "prefix": "branch",
+        "body": [
+            "branch $0"
+        ],
+        "description": "Branch statement"
+    },
+    "Function keyword": {
+        "prefix": "cast",
+        "body": [
+            "cast $1($2) >>",
+            "\t$0",
+            "<<"
+        ],
+        "description": "Function definition"
+    },
+    "Start function": {
+        "prefix": "Start",
+        "body": [
+            "cast Start() >>",
+            "\t$0",
+            "<<"
+        ],
+        "description": "Program entry point"
+    },
+    "Do block": {
+        "prefix": "do",
+        "body": [
+            "do $0"
+        ],
+        "description": "Do block"
+    },
+    "Math": {
+        "prefix": "math",
+        "body": [
+            "math([$0]);"
+        ],
+        "description": "Math expression"
+    },
+    "Colon": {
+        "prefix": ":",
+        "body": [
+            ":$0"
+        ],
+        "description": "Colon"
+    },
+    "Semicolon": {
+        "prefix": ";",
+        "body": [
+            ";$0"
+        ],
+        "description": "Semicolon"
+    },
+    "Dot": {
+        "prefix": ".",
+        "body": [
+            ".$0"
+        ],
+        "description": "Dot"
+    },
+    "Comma": {
+        "prefix": ",",
+        "body": [
+            ",$0"
+        ],
+        "description": "Comma"
+    },
+    "LParen": {
+        "prefix": "(",
+        "body": [
+            "($0"
+        ],
+        "description": "Left parenthesis"
+    },
+    "RParen": {
+        "prefix": ")",
+        "body": [
+            ")$0"
+        ],
+        "description": "Right parenthesis"
+    },
+    "LBracket": {
+        "prefix": "[",
+        "body": [
+            "[$0"
+        ],
+        "description": "Left bracket"
+    },
+    "RBracket": {
+        "prefix": "]",
+        "body": [
+            "]$0"
+        ],
+        "description": "Right bracket"
+    },
+    "LBrace": {
+        "prefix": "{",
+        "body": [
+            "{$0"
+        ],
+        "description": "Left brace"
+    },
+    "RBrace": {
+        "prefix": "}",
+        "body": [
+            "}$0"
+        ],
+        "description": "Right brace"
+    },
+    "Equals": {
+        "prefix": "=",
+        "body": [
+            "=$0"
+        ],
+        "description": "Assignment"
+    },
+    "Plus": {
+        "prefix": "+",
+        "body": [
+            "+$0"
+        ],
+        "description": "Plus operator"
+    },
+    "Minus": {
+        "prefix": "-",
+        "body": [
+            "-$0"
+        ],
+        "description": "Minus operator"
+    },
+    "Star": {
+        "prefix": "*",
+        "body": [
+            "*$0"
+        ],
+        "description": "Multiply operator"
+    },
+    "Slash": {
+        "prefix": "/",
+        "body": [
+            "/$0"
+        ],
+        "description": "Divide operator"
+    },
+    "Mod": {
+        "prefix": "%",
+        "body": [
+            "%$0"
+        ],
+        "description": "Modulo operator"
+    },
+    "Equal": {
+        "prefix": "==",
+        "body": [
+            "==$0"
+        ],
+        "description": "Equals"
+    },
+    "Not equal": {
+        "prefix": "!=",
+        "body": [
+            "!=$0"
+        ],
+        "description": "Not equals"
+    },
+    "Greater or equal": {
+        "prefix": ">=",
+        "body": [
+            ">=$0"
+        ],
+        "description": "Greater or equal"
+    },
+    "Less or equal": {
+        "prefix": "<=",
+        "body": [
+            "<=$0"
+        ],
+        "description": "Less or equal"
+    },
+    "Greater": {
+        "prefix": ">",
+        "body": [
+            ">$0"
+        ],
+        "description": "Greater"
+    },
+    "Less": {
+        "prefix": "<",
+        "body": [
+            "<$0"
+        ],
+        "description": "Less"
+    }
+}

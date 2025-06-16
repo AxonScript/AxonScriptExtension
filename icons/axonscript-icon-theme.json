@@ -1,0 +1,13 @@
+{
+    "iconDefinitions": {
+        "axonscript-file": {
+            "iconPath": "./axon-icon.svg"
+        }
+    },
+    "fileExtensions": {
+        "ax": "axonscript-file"
+    },
+    "languageIds": {
+        "axonscript": "axonscript-file"
+    }
+}
