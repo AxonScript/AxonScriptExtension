@@ -1,4 +1,5 @@
 {
+  "publisher": "AxonScript",
   "name": "axonscript",
   "icon": "icon.png",
   "displayName": "AxonScript",
@@ -7,6 +8,14 @@
   "engines": {
     "vscode": "^1.101.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AxonScript/AxonScriptExtension"
+  },
+  "bugs": {
+    "url": "https://github.com/AxonScript/AxonScriptExtension/issues"
+  },
+  "homepage": "https://github.com/AxonScript/AxonScriptExtension",
   "categories": [
     "Programming Languages"
   ],
@@ -21,6 +30,10 @@
         "extensions": [
           ".ax"
         ],
+        "icon": {
+          "light": "./icons/axon-icon.svg",
+          "dark": "./icons/axon-icon.svg"
+        },
         "configuration": "./language-configuration.json"
       }
     ],
@@ -28,13 +41,6 @@
       {
         "language": "axonscript",
         "path": "./snippets/axonscript.code-snippets.json"
-      }
-    ],
-    "iconThemes": [
-      {
-        "id": "axonscript-icons",
-        "label": "AxonScript File Icons",
-        "path": "./icons/axonscript-icon-theme.json"
       }
     ],
     "grammars": [
